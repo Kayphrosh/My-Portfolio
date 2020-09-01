@@ -110,7 +110,7 @@ a:active {
 
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 740px) {
     nav {
         display: flex;
         justify-content: space-between; 
