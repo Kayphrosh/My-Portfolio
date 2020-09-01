@@ -9,14 +9,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     font-size: 16px;
-    background: #f4f4f4;
+    background: #e9e5e5;
 }
 
 nav {
     background: #022d41;
     color: #f4f4f4;
     align-items: center;
-    padding: 5px 1em ;
+    padding: 5px 0.5em ;
     min-height: 8vh;
 }
 li {
@@ -35,12 +35,13 @@ a:hover {
 a:active {
     color: #000;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
     width: 300px;
     transition: ease-in 1s;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 .logo h2{
     color: #daecf3;
@@ -48,7 +49,7 @@ a:active {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .highlight {
     color: bisque;
@@ -61,8 +62,6 @@ a:active {
     text-align: center;
     padding: 200px 00px;
     overflow-y: hidden;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 .content {
     padding: 35px; 
@@ -85,38 +84,74 @@ a:active {
     letter-spacing: 0.5px;
     font-size: 16px;
 }
+.about-container {
+    overflow: hidden;
+    padding: 20px 30px;
+}
 .about {
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 30px 20px;
     width: 50%;
     margin: 50px 30px;
     box-sizing: border-box;
     border-radius: 10px;
-    background: burlywood;
- 
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+    background: rgba( 50, 50, 22, 0.1);
     overflow: hidden;
+    transition: ease-in 2s ;
+    transform: rotate(5deg);
+}
+.about p{
+    text-align: center;
+    padding: 20px 0px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+
 }
 .display-pics {
     background: url(./snap.jpg) no-repeat center center;
     align-items: center;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    width: 88%;
+    width: 200px;
+    height: 200px;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 0;
+
+}
+
+.qoute {
+    padding: 50px 20px;
+    width: 50%;
+    margin: 50px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #751132;
+    overflow: hidden;
+    color: #ffff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+    transition: ease-in 2s ;
+    transform: rotate(5deg);
+    
 }
 
 
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 760px) {
     nav {
         display: flex;
         justify-content: space-between; 
     }
     .about-container{
         display: flex;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .display-pics {
+        width: 200px;
+        margin-left: 20%;
     }
 }
 
@@ -127,11 +162,11 @@ a:active {
         margin-left: 15%;
     }
     .navbar {
-        padding: 10px 0;
-        margin-left: 25px;
-        margin-right: 10px;
+        padding: 5px 0;
+        margin-left: 18%;
+  
     }
-    .about {
+    .about, .qoute {
         width: 88%;
         align-items: center;
         flex-direction: column;
