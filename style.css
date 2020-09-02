@@ -13,27 +13,50 @@ body {
 }
 
 nav {
-    background: #022d41;
     color: #f4f4f4;
     align-items: center;
     padding: 5px 0.5em ;
     min-height: 8vh;
+
 }
 li {
     list-style: none;
+    /* background-color: #4e4c4c;
+    padding: 5px;
+    border: none;
+    border-radius: 10px; */
 }
 a  {
-    color: #daecf3;
+    color: #ffffff;
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1.5px;
 }
 a:hover {
-    color: bisque;
+    color: #968621;
 }
 a:active {
-    color: #000;
+    color: #968621;
+}
+.send p{
+    overflow: hidden;
+}
+.send {
+    background:rgba(233, 223, 223, 0.8);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+}
+.send:hover {
+    background-color: #968621;
+    border: none;
 }
 
 .navbar{
@@ -44,7 +67,7 @@ a:active {
     padding-right: 5px;
 }
 .logo h2{
-    color: #daecf3;
+    color: #ffffff;
     letter-spacing: 2px;
     font-size: 20px;
     font-weight: bold;
@@ -57,10 +80,10 @@ a:active {
 }
 
 .showcase {
-    background: url(./showcase.jpg) no-repeat center center;
-    height: 600px;
+    background: url(./showcase01.jpg) no-repeat center center;
+    background-color: black;
+    height: 700px;
     text-align: center;
-    padding: 200px 00px;
     overflow-y: hidden;
 }
 .content {
@@ -70,6 +93,7 @@ a:active {
     max-height: 150%;
     transition: ease-in 2s ;
     transform: rotate(360deg);
+    margin: 150px 00px;
     margin-left: 25%;
     overflow:  hidden;
     border-radius: 10px;
@@ -84,31 +108,44 @@ a:active {
     letter-spacing: 0.5px;
     font-size: 16px;
 }
+.ab {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 50px;
+    
+}
+.ab p{
+    font-size: 18px;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+}
 .about-container {
     overflow: hidden;
     padding: 20px 30px;
 }
-.about {
+.about{
     display: flex;
     flex-direction: row;
-    padding: 30px 20px;
+    padding: 50px 40px;
     width: 50%;
-    margin: 50px 30px;
+    margin: 40px 30px;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
     background: rgba( 50, 50, 22, 0.1);
     overflow: hidden;
-    transition: ease-in 2s ;
+    transition: ease-in 1s ;
     transform: rotate(5deg);
+    color: #968621;
+    text-align: center;
 }
-.about p{
+/* .qoute, .qoute-js, .about-js p{
     text-align: center;
     padding: 20px 0px;
     letter-spacing: 0.5px;
     font-size: 16px;
 
-}
+} */
 .display-pics {
     background: url(./snap.jpg) no-repeat center center;
     align-items: center;
@@ -118,38 +155,95 @@ a:active {
     align-items: center;
     flex-direction: row;
     padding: 0;
-
 }
 
 .qoute {
-    padding: 50px 20px;
+    padding: 50px 30px;
     width: 50%;
     margin: 50px 30px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     border-radius: 10px;
     background: #751132;
     overflow: hidden;
-    color: #ffff;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
-    transition: ease-in 2s ;
+    color: #f4f4f4;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+    transition: ease-in 1s;
     transform: rotate(5deg);
+}
+
+.author {
+    float: right;
+    font-size: 18px;
+}
+
+.about-js{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 40px;
+    width: 50%;
+    margin: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+    background: rgba( 50, 50, 22, 0.1);
+    overflow: hidden;
+    transition: ease-in 1s ;
+    transform: rotate(5deg);
+    color: #968621;
+    text-align: center;
+}
+.js {
+    background: url(./JS.png) no-repeat center center;
+    align-items: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
     
 }
 
+.qoute-js {
+    padding: 50px 30px;
+    width: 50%;
+    margin: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #751132;
+    overflow: hidden;
+    color: #f4f4f4;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+    transition: ease-in 1s ;
+    transform: rotate(5deg);
+}
 
-
+footer {
+    background: grey;
+    padding-top: 10px;
+}
+footer p{
+    text-align: center;
+    padding-bottom: 0;
+    letter-spacing: 1px;
+}
+.sm-icon {
+    padding-bottom: 10px;
+    word-spacing: 10px;
+}
 @media screen and (min-width: 760px) {
     nav {
         display: flex;
         justify-content: space-between; 
     }
-    .about-container{
+    .about-container {
         display: flex;
     }
-    .about {
+    .about, .about-js {
         flex-direction: column;
     }
-    .display-pics {
+    .display-pics, .js {
         width: 200px;
         margin-left: 20%;
     }
@@ -166,7 +260,7 @@ a:active {
         margin-left: 18%;
   
     }
-    .about, .qoute {
+    .about, .qoute, .about-js, .qoute-js {
         width: 88%;
         align-items: center;
         flex-direction: column;
