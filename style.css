@@ -19,7 +19,7 @@ nav {
     min-height: 8vh;
 
 }
-li {
+.nav li {
     list-style: none;
     /* background-color: #4e4c4c;
     padding: 5px;
@@ -39,23 +39,27 @@ a:hover {
 a:active {
     color: #968621;
 }
+.links {
+    color: #751132;
+    font-size: 15px;
+}
 .send p{
     overflow: hidden;
 }
 .send {
-    background:rgba(233, 223, 223, 0.8);
-    color: rgb(0, 0, 0);
-    padding: 10px 10px;
-    overflow: hidden;
-    font-size: 16px;
-    font-weight: normal;
-    border: none;
     margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+    padding: 20px 20px;
+    background: #968621;
+    color: #f4f4f4;
+    font-size: 14px;
+    align-content: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
 }
 .send:hover {
-    background-color: #968621;
+    background: none;
+    color: #000;
     border: none;
 }
 
@@ -115,6 +119,7 @@ a:active {
     
 }
 .ab p{
+    background: rgba(223, 223, 217, 0.1);
     font-size: 18px;
     color: #1a1a1a;
     letter-spacing: 1px;
@@ -132,20 +137,20 @@ a:active {
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
-    background: rgba( 50, 50, 22, 0.1);
+    background: rgba(223, 223, 217, 0.1);
     overflow: hidden;
     transition: ease-in 1s ;
     transform: rotate(5deg);
     color: #968621;
     text-align: center;
 }
-/* .qoute, .qoute-js, .about-js p{
+.about, .qoute, .qoute-js, .about-js, .service-1, .service-2 p{
     text-align: center;
-    padding: 20px 0px;
+    margin-top: 30px;
     letter-spacing: 0.5px;
     font-size: 16px;
 
-} */
+}
 .display-pics {
     background: url(./snap.jpg) no-repeat center center;
     align-items: center;
@@ -154,7 +159,7 @@ a:active {
     height: 200px;
     align-items: center;
     flex-direction: row;
-    padding: 0;
+    margin-bottom: 30px;
 }
 
 .qoute {
@@ -171,10 +176,15 @@ a:active {
     transition: ease-in 1s;
     transform: rotate(5deg);
 }
-
+.qoute p{
+    margin-bottom: 30px;
+}
 .author {
     float: right;
     font-size: 18px;
+    border-top: 3px #968621 solid;
+    
+    padding-top: 10px;
 }
 
 .about-js{
@@ -186,7 +196,7 @@ a:active {
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
-    background: rgba( 50, 50, 22, 0.1);
+    background: rgba(223, 223, 217, 0.1);
     overflow: hidden;
     transition: ease-in 1s ;
     transform: rotate(5deg);
@@ -217,6 +227,23 @@ a:active {
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
     transition: ease-in 1s ;
     transform: rotate(5deg);
+}
+
+.order {
+    padding: 20px 30px;
+    background: #968621;
+    color: #f4f4f4;
+    font-size: 14px;
+    margin: 30px 40%;
+    align-content: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+.order:hover {
+    background: none;
+    color: #000;
+    border: none;
 }
 
 footer {
@@ -265,5 +292,7 @@ footer p{
         align-items: center;
         flex-direction: column;
     }
-
+    .order {
+        margin: 30px 20%;
+    }
 }
