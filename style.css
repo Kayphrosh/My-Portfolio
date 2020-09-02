@@ -86,7 +86,7 @@ a:active {
 .showcase {
     background: url(./showcase01.jpg) no-repeat center center;
     background-color: black;
-    height: 700px;
+    height: 800px;
     text-align: center;
     overflow-y: hidden;
 }
@@ -292,7 +292,12 @@ footer p{
         align-items: center;
         flex-direction: column;
     }
+<<<<<<< HEAD
     .order {
         margin: 30px 20%;
     }
 }
+=======
+
+}
+>>>>>>> 962191781bf729c82f3528fbe5a78c93259a04ec
