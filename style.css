@@ -82,7 +82,7 @@ a:active {
 .showcase {
     background: url(./showcase01.jpg) no-repeat center center;
     background-color: black;
-    height: 700px;
+    height: 800px;
     text-align: center;
     overflow-y: hidden;
 }
