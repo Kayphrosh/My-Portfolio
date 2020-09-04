@@ -19,8 +19,8 @@ nav {
     min-height: 8vh;
 
 }
-a a:active a:hover a:focus{
-    outline: none; 
+a, a:active, a:hover, a:focus{
+    outline: 0; 
 }
 
 #arrow-up {
