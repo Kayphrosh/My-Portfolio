@@ -26,22 +26,23 @@ nav {
     border: none;
     border-radius: 10px; */
 }
-a  {
+.navbar, .sm-icon, a{
     color: #ffffff;
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1.5px;
 }
-a:hover {
+.navbar, .sm-icon, a:hover{
     color: #968621;
 }
-a:active {
+.navbar, .sm-icon, a:active{
     color: #968621;
 }
 .links {
     color: #751132;
     font-size: 15px;
+    text-decoration: none;
 }
 .send p{
     overflow: hidden;
@@ -118,7 +119,7 @@ a:active {
     padding-left: 50px;
     
 }
-.ab p{
+.ab, .service-header p{
     background: rgba(223, 223, 217, 0.1);
     font-size: 18px;
     color: #1a1a1a;
@@ -140,7 +141,7 @@ a:active {
     background: rgba(223, 223, 217, 0.1);
     overflow: hidden;
     transition: ease-in 1s ;
-    transform: rotate(5deg);
+    transform: rotate(3deg);
     color: #968621;
     text-align: center;
 }
@@ -148,7 +149,8 @@ a:active {
     text-align: center;
     margin-top: 30px;
     letter-spacing: 0.5px;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.9rem;
 
 }
 .display-pics {
@@ -174,7 +176,7 @@ a:active {
     color: #f4f4f4;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
     transition: ease-in 1s;
-    transform: rotate(5deg);
+    transform: rotate(3deg);
 }
 .qoute p{
     margin-bottom: 30px;
@@ -199,7 +201,7 @@ a:active {
     background: rgba(223, 223, 217, 0.1);
     overflow: hidden;
     transition: ease-in 1s ;
-    transform: rotate(5deg);
+    transform: rotate(3deg);
     color: #968621;
     text-align: center;
 }
@@ -226,7 +228,7 @@ a:active {
     color: #f4f4f4;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
     transition: ease-in 1s ;
-    transform: rotate(5deg);
+    transform: rotate(3deg);
 }
 
 .order {
@@ -244,6 +246,114 @@ a:active {
     background: none;
     color: #000;
     border: none;
+}
+
+/* SERVICES */
+.service-header, .contact-header{
+    margin: 15px 30px; 
+
+}
+.service-header, .contact-header h3{
+    font-size: 18px;
+    font-weight: 700px;
+    letter-spacing: 1.5px;
+}
+
+.services {
+    padding: 30px 5px;
+    margin: 10px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+    background: #751132;
+    border-radius: 10px;
+}
+.service-content {
+    margin: 30px;
+}
+.service-content h3{
+    padding-left: 30%;
+    padding-top: 10px;
+    margin: 0;
+}
+
+#iconss {
+    padding-left: 40%;
+    font-size: 50px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    transition: ease-in 3s;
+}
+#iconss:hover {
+    color: #968621;
+}
+
+/* CONTACT */
+
+
+.map iframe {
+    max-width: 100%;
+    max-height: 436px;
+    margin-right: 20px;
+    border-radius: 20px;
+    color: #000000;   
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.contact-container {
+        padding: 10px 40px;
+        margin: 20px;
+        box-shadow: 0 15px 50px rgba(122, 75, 75, 0.2);
+        background: rgba(223, 223, 217, 0.1);
+        border-radius: 10px;
+        color: #968621;
+    }
+.info-text {
+        display: grid;
+    }
+.contact-info {
+    margin-left: 20px;
+    margin: 20px 0; 
+}
+
+.contact-info h3{
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.contact-info div input[type="text"],.contact-info div textarea {
+    width: 100%;
+    padding: 11px 10px;
+    margin: 10px 0 18px 0;
+    background: none;
+    outline: none;
+    border: 2px solid #383535;
+    -webkit-appearance: none;
+    }
+
+#text-form {
+    padding-bottom: 7px;
+    padding-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.form-send {
+margin: 30px 40%;
+padding: 20px 20px;
+background: #968621;
+color: #f4f4f4;
+font-size: 14px;
+align-content: center;
+border: none;
+border-radius: 20px;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-send:hover {
+background: none;
+color: #000;
+border: none;
 }
 
 footer {
@@ -270,9 +380,21 @@ footer p{
     .about, .about-js {
         flex-direction: column;
     }
-    .display-pics, .js {
+    .display-pics, .js, .landing-page {
         width: 200px;
         margin-left: 20%;
+    }
+    .services {
+        display: flex;
+        flex-basis: 33%;
+    }
+    .contact-container{
+        display: flex;
+        flex-basis: 50%; 
+        justify-content: space-between;
+    }
+    .map iframe { 
+        margin-top: 90px; 
     }
 }
 
@@ -292,12 +414,9 @@ footer p{
         align-items: center;
         flex-direction: column;
     }
-<<<<<<< HEAD
     .order {
-        margin: 30px 20%;
+        margin: 30px 22%;
     }
 }
-=======
 
-}
->>>>>>> 962191781bf729c82f3528fbe5a78c93259a04ec
+
