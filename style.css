@@ -19,6 +19,10 @@ nav {
     min-height: 8vh;
 
 }
+a:active {
+    outline: none; 
+}
+
 #arrow-up {
     color: #968621; 
     font-size: 50px;  
