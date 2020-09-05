@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Yanone+Kaffeesatz&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,7 +8,8 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto Condensed', sans-serif;
+
     line-height: 1.6;
     font-size: 16px;
     background: #e9e5e5;
@@ -37,18 +40,26 @@ nav {
     border: none;
     border-radius: 10px; */
 }
+
 .navbar, .sm-icon, a{
     color: #ffffff;
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1.5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 .navbar, .sm-icon, a:hover{
     color: #968621;
+    outline: none;
+    border: none;
 }
 .navbar, .sm-icon, a:active{
-    color: #968621;
+    color: #000000;
+    outline: none;
+    border: none;
 }
 .links {
     color: #751132;
@@ -68,11 +79,13 @@ nav {
     border: none;
     border-radius: 20px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
-.send:hover {
+.send:hover:focus {
     background: none;
     color: #000;
     border: none;
+    outline: 0;
 }
 
 .navbar{
@@ -124,18 +137,20 @@ nav {
     letter-spacing: 0.5px;
     font-size: 16px;
 }
-.ab {
-    text-align: left;
+/* .ab {
+    text-align: center;
     margin-top: 10px;
     padding-left: 50px;
     
-}
-.ab, .service-header p{
+} */
+.ab, .contact-header p{
     background: rgba(223, 223, 217, 0.1);
     font-size: 18px;
     color: #1a1a1a;
     letter-spacing: 1px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
 .about-container {
     overflow: hidden;
     padding: 20px 30px;
@@ -160,7 +175,7 @@ nav {
     text-align: center;
     margin-top: 30px;
     letter-spacing: 0.5px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.9rem;
 
 }
@@ -185,7 +200,7 @@ nav {
     background: #751132;
     overflow: hidden;
     color: #f4f4f4;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
     transition: ease-in 1s;
     transform: rotate(3deg);
 }
@@ -208,7 +223,7 @@ nav {
     margin: 40px 30px;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
     background: rgba(223, 223, 217, 0.1);
     overflow: hidden;
     transition: ease-in 1s ;
@@ -251,7 +266,7 @@ nav {
     align-content: center;
     border: none;
     border-radius: 20px;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 .order:hover {
     background: none;
@@ -260,20 +275,28 @@ nav {
 }
 
 /* SERVICES */
-.service-header, .contact-header{
-    margin: 15px 30px; 
-
+.service-header, .contact-header, .ab{
+    margin: 15px 0px; 
+    text-align: center;
 }
-.service-header, .contact-header h3{
+.service-header p{
+    background: rgba(223, 223, 217, 0.1);
     font-size: 18px;
-    font-weight: 700px;
-    letter-spacing: 1.5px;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.service-header, .contact-header, .ab h3{
+    font-size: 20px;
+    font-weight: 600px;
+    letter-spacing: 2px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .services {
     padding: 30px 5px;
     margin: 10px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
     background: #751132;
     border-radius: 10px;
     color: #f4f4f4;
@@ -283,10 +306,12 @@ nav {
 }
 .service-content h3{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0px;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
+    color: #000;
+    transition: ease-in 3s;
 }
 .service-content p{
     font-size: 14px;
@@ -297,9 +322,9 @@ nav {
 
 #iconss {
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     padding-bottom: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transition: ease-in 3s;
     color: #000;
 }
@@ -319,6 +344,15 @@ nav {
     padding: 0px;
     margin-top: 10px;
     padding-left: 0 ;
+}
+.map p{
+ 
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
 }
 
 .contact-container {
@@ -386,11 +420,16 @@ footer {
 footer p{
     text-align: center;
     padding-bottom: 0;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    padding-bottom: 15px;
+}
+#bdr {
+    border-top: 2px solid #968621;
+    
 }
 .sm-icon {
     padding-bottom: 10px;
-    word-spacing: 10px;
+    word-spacing: 25px;
 }
 @media screen and (min-width: 760px) {
     nav {
@@ -410,16 +449,25 @@ footer p{
     .services {
         display: flex;
         flex-basis: 33%;
+        justify-content: space-around;
     }
     .contact-container{
         display: flex;
         flex-basis: 50%; 
         justify-content: space-between;
     }
-    .map iframe { 
-        margin-top: 90px; 
+    .map iframe{ 
+        margin-top: 0px; 
         padding-left: 40px ;
-        padding-top: 30px;
+        padding-top: 0px;
+    }
+    .map-p{
+        margin-top: 40px;
+        padding-left: 40px ;
+    }
+
+    .contact-info div input[type="text"],.contact-info div textarea {
+        min-width: 460px;
     }
 }
 
@@ -442,6 +490,8 @@ footer p{
     .order {
         margin: 30px 22%;
     }
+   
+    
 }
 
 
