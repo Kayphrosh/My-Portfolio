@@ -151,7 +151,7 @@ a, a:active, a:hover, a:focus{
 .content h3{
     letter-spacing: 1px;
     font-size: 20px;
-    
+    font-size: 600;
 }
 .content p{
     padding-top: 20px;
@@ -500,6 +500,10 @@ footer p{
 }
 
 @media screen and (max-width: 750px) {
+    nav {
+        align-items: center;
+        padding: 10px 1em ;
+    }
     .content {
         width: 70%;
         margin-left: 15%;
@@ -507,12 +511,12 @@ footer p{
         padding: 15px;
     }
      .content p{
-        font-size: 14px;
+        font-size: 16px;
         padding-top: 10px;
     }
     .content h3{
-        font-size: 16px;
-        margin-bottom: 2px;
+        font-size: 18px;
+        margin-bottom: 5px;
     }
     /* .navbar {
         padding: 5px 0;
