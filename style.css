@@ -63,7 +63,7 @@ a, a:active, a:hover, a:focus{
     color: #ffffff;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1.5px;
     outline: none;
     border: none;
@@ -104,7 +104,8 @@ a, a:active, a:hover, a:focus{
     color: #000;
     border: none;
     outline: 0;
-}.send:focus {
+}
+.send:focus {
     border: none;
     outline: none;
 }
@@ -132,7 +133,7 @@ a, a:active, a:hover, a:focus{
 }
 
 .showcase {
-    background: url(./showcase01.jpg) no-repeat center center/cover;
+    background: url(./show.jpg) no-repeat center center/cover;
     height: 100vh;
     text-align: center;
     overflow-y: hidden;
@@ -359,7 +360,7 @@ a, a:active, a:hover, a:focus{
 .map iframe {
     max-width: 100%;
     max-height: 436px;
-    margin-right: 20px;
+    margin-right: 10px;
     border-radius: 20px;
     color: #000000;   
     padding: 0px;
@@ -368,7 +369,7 @@ a, a:active, a:hover, a:focus{
 }
 .map p{
  
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 18px;
     color: #000;
     letter-spacing: 1px;
@@ -377,15 +378,15 @@ a, a:active, a:hover, a:focus{
 }
 
 .contact-container {
-        padding: 10px 40px;
-        margin: 10px;
-        box-shadow: 0 15px 50px rgba(122, 75, 75, 0.2);
-        background: rgba(223, 223, 217, 0.1);
-        border-radius: 10px;
-        color: #968621;
+    padding: 10px 30px;
+    margin: 10px;
+    box-shadow: 0 15px 50px rgba(122, 75, 75, 0.2);
+    background: rgba(223, 223, 217, 0.1);
+    border-radius: 10px;
+    color: #968621;
 }
 .info-text {
-        display: grid;
+    display: grid;
 }
 .contact-info {
     margin-left: 20px;
@@ -406,11 +407,12 @@ a, a:active, a:hover, a:focus{
     outline: none;
     border: 2px solid #383535;
     -webkit-appearance: none;
+    font-size: 14px;
 }
 
 #text-form {
-    padding-bottom: 7px;
-    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-top: 15px;
     margin-left: 10px;
     font-size: 20px;
     font-style: italic;
@@ -483,19 +485,38 @@ footer p{
     }
     .map iframe{ 
         margin-top: 0px; 
-        padding-left: 40px ;
-        padding-top: 0px;
-        margin-left: 20px;
-        width: 100%;
+        padding-left: 10px ;
+        padding-top: 10px;
+        margin-left: 5px;
+        /* width: 100%; */
     }
     .map-p{
-        margin-top: 40px;
-        padding-left: 40px ;
+        margin-top: 20px;
+        padding-left: 0px ;
         margin-left: 20px;
     }
+    .contact-info {
+        border: none;
+        padding: 20px  50px;
+        border-radius: 20px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+        background: #bdbcbc;
+    }
+    .map {
+        border: none;
+        margin-left: 20px;
+        padding: 20px 20px 20px 10px;
+        border-radius: 20px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+        background: #bdbcbc;
+    }
+
 
     .contact-info div input[type="text"],.contact-info div textarea {
-        width: 400px;
+        width: 350px;
+        background-color: #f1ecec;
+        border-color: #f1ecec;
+        font-size: 16px;
     }
 }
 
@@ -552,6 +573,9 @@ footer p{
         transform: translate(-9%, -80%);  
         z-index: 2;
         overflow: hidden;
+    }
+    .hamburger:hover {
+        background-color: #f4f4ff;
     }
     .navbar {
         background: transparent;
