@@ -368,13 +368,11 @@ a, a:active, a:hover, a:focus{
     padding-left: 0 ;
 }
 .map p{
- 
     padding-bottom: 5px;
-    font-size: 18px;
-    color: #000;
+    font-size: 16px;
+    color: #968621;
     letter-spacing: 1px;
     word-spacing: 2px;
-
 }
 
 .contact-container {
@@ -401,20 +399,20 @@ a, a:active, a:hover, a:focus{
 
 .contact-info div input[type="text"],.contact-info div textarea {
     width: 100%;
-    padding: 11px 10px;
-    margin: 10px 0 18px 0;
+    padding: 5px 10px;
+    margin: 10px 0 10px 0;
     background: none;
     outline: none;
-    border: 2px solid #383535;
+    border: 1px solid #383535;
     -webkit-appearance: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #text-form {
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     padding-top: 15px;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-style: italic;
 }
 
@@ -484,7 +482,7 @@ footer p{
         justify-content: space-around;
     }
     .map iframe{ 
-        margin-top: 70px; 
+        margin-top: 0px; 
         padding-left: 10px ;
         padding-top: 10px;
         margin-left: 5px;
