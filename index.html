@@ -110,7 +110,7 @@
         
                 <div class="contact-container">
                     <div class="contact-info">
-                        <form name="contact"  enctype="text/plain" method="POST" data-netlify="true" ></form>                    
+                        <form  action="POST" data-netlify="true" ></form>                    
                             <div class="info-text">
                                 <span id="text-form">Name </span>		
                                 <input type="text" value="" />						
@@ -131,11 +131,9 @@
                                 <input type="file" name="myfile" id="message" rows="4"/>	
                             </div>
                             <div class="info-text">
-                                <div data-netlify-recaptcha="true"></div>
+                                <div data-netlify-recaptcha="true" style="overflow: hidden;"></div>
                             </div>
-                            <div>
                                 <input class="form-send" type="submit" value="send"> 
-                            </div>  
                         </form> 
                     </div>
                      
