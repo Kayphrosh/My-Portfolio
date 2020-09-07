@@ -107,29 +107,37 @@
                 You want to reach out to Olakunbi?
             </p>
         </div>
-        <form action="mailto:olakunbiolabode01@gmail.com" enctype="text/plain">
+        
                 <div class="contact-container">
                     <div class="contact-info">
-                            
-                        <div class="info-text">
-                            <span id="text-form">Name </span>		
-                            <input type="text" value="" >						
-                        </div>
-                        <div class="info-text">
-                            <span id="text-form">Email</span>		
-                            <input type="text" placeholder="enter your email..." >						
-                        </div>
-                        <div class="info-text">
-                            <span id="text-form">Subject</span>		
-                            <input type="text" value="" >	
-                        </div>
-                        <div class="info-text">
-                            <span id="text-form">Your Message</span>		
-                            <textarea> </textarea>	
-                        </div>
-                        <input class="form-send" type="submit" value="send" href=”mailto:olakunbiolabode@yahoo.com” > 
-                    </div>  
-        </form>  
+                        <form name="contact"  enctype="text/plain" method="POST" data-netlify="true" >                    
+                            <div class="info-text">
+                                <span id="text-form">Name </span>		
+                                <input type="text" value="" />						
+                            </div>
+                            <div class="info-text">
+                                <span id="text-form">Email</span>		
+                                <input type="text" placeholder="enter your email..." />						
+                            </div>
+                            <div class="info-text">
+                                <span id="text-form">Subject</span>		
+                                <input type="text" value="" >	
+                            </div>
+                            <div class="info-text">
+                                <span id="text-form">Your Message</span>		
+                                <textarea name="message" id="message" rows="4"> </textarea>	
+                            </div>
+                            <div class="info-text">		
+                                <input type="file" name="myfile" id="message" rows="4"/>	
+                            </div>
+                            <div class="info-text">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+                            <div>
+                                <input class="form-send" type="submit" value="send"> 
+                            </div>  
+                        </form> 
+                     
 
                     <div class="map">
                         <div class="map-p">
