@@ -29,6 +29,15 @@ nav {
 a, a:active, a:hover, a:focus{
     outline: 0; 
 }
+.noSelect { 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -webkit-tap-highlight-color: transparent; 
+}
 
 #arrow-up {
     color: #968621; 
@@ -43,10 +52,6 @@ a, a:active, a:hover, a:focus{
 }
 .nav li {
     list-style: none;
-    /* background-color: #4e4c4c;
-    padding: 5px;
-    border: none;
-    border-radius: 10px; */
 }
 .sm-icon a{
     color: #ffffff;
@@ -519,10 +524,7 @@ footer p{
 }
 
 @media screen and (max-width: 750px) {
-    nav {
-        align-items: center;
-        padding: 10px 1em ;
-    }
+
     .content {
         width: 70%;
         margin-left: 15%;
@@ -560,7 +562,8 @@ footer p{
     nav {
         position: relative;
         overflow: hidden;
-
+        align-items: center;
+        padding: 10px 1em ;
     }
     .hamburger {
         float: right;
@@ -596,7 +599,7 @@ footer p{
         pointer-events: all;
     }
     .navbar li {
-        opacity: o;
+        opacity: 0;
         overflow: hidden;
     }
     .navbar li a{
@@ -629,7 +632,6 @@ footer p{
 
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
-
 }
     
 
