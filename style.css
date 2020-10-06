@@ -94,7 +94,7 @@ a, a:active, a:hover, a:focus{
 }
 .send {
     margin-top: 20px;
-    padding: 20px 20px;
+    padding: 15px 20px;
     background: #968621;
     color: #f4f4f4;
     font-size: 14px;
@@ -149,6 +149,7 @@ a, a:active, a:hover, a:focus{
     width: 50%;
     align-content: center;
     transition: ease-in 1s;
+    animation: slide-down;
     margin-top: 30vh;
     margin-left: 25%;
     overflow:  hidden;
@@ -574,9 +575,6 @@ footer p{
         transform: translate(-9%, -80%);  
         z-index: 2;
         overflow: hidden;
-    }
-    .hamburger:hover {
-        background-color: #f4f4ff;
     }
     .navbar {
         background: transparent;
