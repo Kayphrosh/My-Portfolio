@@ -95,8 +95,8 @@ a, a:active, a:hover, a:focus{
 .send {
     margin-top: 20px;
     padding: 15px 20px;
-    background: #968621;
-    color: #f4f4f4;
+    background: #f4f4f4;
+    color: #000000;
     font-size: 14px;
     align-content: center;
     border: none;
@@ -107,6 +107,7 @@ a, a:active, a:hover, a:focus{
 .send:hover {
     background: none;
     color: #000;
+    transition: 1s ease-in-out;
     border: none;
     outline: 0;
 }
@@ -153,7 +154,7 @@ a, a:active, a:hover, a:focus{
 }
 .content {
     padding: 35px; 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(250, 250, 250, 0.5);
     width: 50%;
     align-content: center;
     transition: ease-in 1s;
@@ -172,6 +173,7 @@ a, a:active, a:hover, a:focus{
     padding-top: 20px;
     letter-spacing: 0.5px;
     font-size: 16px;
+    font-weight: 500;
 }
 /* .ab {
     text-align: center;
@@ -202,7 +204,7 @@ a, a:active, a:hover, a:focus{
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-    background: rgba(223, 223, 217, 0.1);
+    background: rgba(223, 223, 217, 0.9);
     overflow: hidden;
     transition: ease-in 1s ;
     transform: rotate(3deg);
@@ -604,7 +606,7 @@ footer p{
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
-        /* transition: all 1s ease-in; */
+        transition: all 1s ease-in;
         pointer-events: none;
         justify-content: space-between;
         overflow: hidden;
@@ -621,6 +623,7 @@ footer p{
     }
     .navbar li a{
         font-size: 18px;
+        text-align: center;
         font-weight: normal;
         overflow: hidden;
     }
