@@ -641,7 +641,7 @@ footer p{
     }
     .container {
         width: 100%;
-        height: 55vh;
+        height: 50vh;
     }
     .navbar {
         background: transparent; 
@@ -658,7 +658,7 @@ footer p{
         transition: all 1s ease-in;
         pointer-events: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         overflow: hidden;
         align-content: center;
         
@@ -671,6 +671,10 @@ footer p{
     .navbar li {
         opacity: 0;
         overflow: hidden;
+        border-bottom: 2px solid #d8d8d8;
+        margin-left: 60px;
+        margin-right: 40px;
+        padding-bottom: 10px;
     }
     .navbar li a{
         font-size: 14px;
