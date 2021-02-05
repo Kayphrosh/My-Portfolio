@@ -451,7 +451,12 @@ a, a:active, a:hover, a:focus{
     letter-spacing: 1px;
     word-spacing: 2px;
 }
-
+/* #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 .contact-container {
     padding: 10px 30px;
     margin: 10px;
@@ -476,14 +481,14 @@ a, a:active, a:hover, a:focus{
 
 .contact-info div input[type="text"],.contact-info div textarea {
     width: 100%;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin: 10px 0 10px 0;
     background: none;
     outline: none;
     border: 2px solid #383535;
     -webkit-appearance: none;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #text-form {
@@ -492,24 +497,32 @@ a, a:active, a:hover, a:focus{
     margin-left: 10px;
     font-size: 16px;
     font-style: italic;
+    align-items: center;
 }
 
+
 .form-send {
-margin: 30px 40%;
-padding: 20px 20px;
-background: #968621;
-color: #f4f4f4;
-font-size: 14px;
-align-content: center;
-border: none;
-border-radius: 20px;
-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding: 15px 60px;
+    margin: 10px auto;
+    background: #968621;
+    color: #f4f4f4;
+    font-size: 14px;
+    align-content: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .form-send:hover {
-background: none;
-color: #000;
-border: none;
+    transform: scale(0.95);
+    transition: 0.4s ease;
+    background: none;
+    color: #000;
+    border: none;
 }
 .form-send:focus {
     border: none;
@@ -753,18 +766,20 @@ footer p{
 }
 .projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 0px;
     margin-bottom: 40px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-    padding-top: 30px;
+    margin-top: 10px;
     border-radius: 5px;
     width: 100%;
 }
 .projects div {
     font-family: 'Roboto', sans-serif;
     width: 500px;
+    margin: 12px 0px 0px 12px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
     position: relative;
     align-items: center;
     margin-bottom: 30px;
@@ -816,6 +831,7 @@ footer p{
     }
     .projects div {
         width: 100%;
+        margin: 20px 0 0 0;
     }
 }
 
