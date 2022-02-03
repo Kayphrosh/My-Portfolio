@@ -183,6 +183,7 @@ a, a:active, a:hover, a:focus{
 }
 .content p{
     font-size: 18px;
+    margin-top: 10px;
 }
 .content div {
     display: flex;
@@ -207,6 +208,7 @@ a, a:active, a:hover, a:focus{
     border: 2px solid #751132;
     background-color: #751132;
     padding: 5px 25px;
+    margin-top: 10px
     transition: 0.2s ease;
 }
 .content #contact:hover {
